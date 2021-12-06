@@ -1,0 +1,135 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/opensans/light/opensans-300',
+        @font-weight: 300,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/opensans/regular/opensans-400',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/opensans/semibold/opensans-600',
+        @font-weight: 600,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/opensans/bold/opensans-700',
+        @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'Roboto',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Bold',
+        @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'Roboto',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Regular',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'Roboto',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Medium',
+        @font-weight: 500,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'OpenSans',
+        @font-path: '@{baseDir}fonts/OpenSans/OpenSans-Regular',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @lora,
+        @font-path: '@{baseDir}fonts/Lora/Lora-Regular',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @lora,
+        @font-path: '@{baseDir}fonts/Lora/Lora-Bold',
+        @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'fontawesome-webfont',
+        @font-path: '@{baseDir}fonts/fontawesome-webfont',
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @helvetica,
+        @font-path: '@{baseDir}fonts/Helvetica/Helvetica',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @helvetica,
+        @font-path: '@{baseDir}fonts/Helvetica/helvetica-light',
+        @font-weight: 300,
+        @font-style: normal,
+        @font-display: swap
+    );
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    h1 {
+        .lib-css(font-size, @h1__font-size-desktop);
+        .lib-css(margin-bottom, @h1__margin-bottom__desktop);
+    }
+}
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .items {
+        .lib-list-reset-styles();
+    }
+
+}
